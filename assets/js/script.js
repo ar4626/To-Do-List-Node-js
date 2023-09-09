@@ -38,7 +38,7 @@ document.getElementById('del-btn').addEventListener('click',function(){
     // here we are making delete request with the help of Ajax request
     $.ajax({
         type: 'post',
-        url: '/delete_todo/?id='+arrcheck,
+        url: '/deleteItem/?id='+arrcheck,
         success: function(){
             console.log("Successfully sent delete request")
             window.location = '/';
